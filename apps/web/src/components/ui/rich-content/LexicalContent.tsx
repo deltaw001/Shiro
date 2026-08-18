@@ -126,7 +126,7 @@ export function LexicalContent({
   const isDark = useIsDark()
   const { present } = useModalStack()
   const presentDialog: PresentDialogFn = useCallback(
-    (props) =>
+    (props: any) =>
       present({
         title: props.title || ' ',
         content: props.content,
